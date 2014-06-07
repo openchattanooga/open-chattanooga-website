@@ -1,3 +1,12 @@
+var watchFiles = {
+    'js':   [
+                'Gruntfile.js'
+            ],
+    'css':  [
+                'sass/*.scss'
+            ]
+};
+
 module.exports  =   function(grunt) {
     require('jit-grunt')(grunt);
 
@@ -20,9 +29,7 @@ module.exports  =   function(grunt) {
             }
         },
         jshint: {
-            files: [
-                'Gruntfile.js'
-            ],
+            files: watchFiles.js,
             jshintrc: '.jshintrc'
         },
         uglify: {
@@ -38,14 +45,28 @@ module.exports  =   function(grunt) {
         },
         watch: {
             css: {
-                files: 'sass/*.scss',
-                tasks: ['sass']
+                files: watchFiles.css,
+                tasks: ['sass', 'copy:css']
             },
             js: {
-                files: [
-                    'Gruntfile.js'
-                ],
+                files: watchFiles.js,
                 tasks: ['jshint', 'uglify']
+            },
+            jekyll: {
+                files: [
+                    '*.html',
+                    '*.md',
+                    'js/**.js',
+                    '_posts/**',
+                    '_includes/**',
+                    '_layouts/**',
+                    'events/**',
+                    'brigade/**'
+                ],
+                tasks: 'shell:jekyll'
+            },
+            options: {
+                livereload: true
             }
         },
         bump: {
@@ -59,6 +80,21 @@ module.exports  =   function(grunt) {
                 tagMessage: 'Release %VERSION%',
                 push: true,
                 pushTo: 'gh-pages'
+            }
+        },
+        copy: {
+            css: {
+                files: {
+                    './_site/css/screen.css': './css/screen.css'
+                }
+            }
+        },
+        shell: {
+            jekyll: {
+                options: {
+                    stdout: true
+                },
+                command: 'jekyll build -c _config-dev.yml'
             }
         }
     });

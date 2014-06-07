@@ -14,5 +14,8 @@
         {% include footer.html %}
         </div><!-- /#wrapper -->
         <script src="//platform.twitter.com/widgets.js" async></script>
+        {% if site.dev %}
+        <script src="//localhost:35729/livereload.js"></script>
+        {% endif %}
     </body>
 </html>

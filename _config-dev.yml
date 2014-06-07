@@ -1,0 +1,17 @@
+# Site settings
+title: Open Chattanooga
+email: info@openchattanooga.com
+description: ""
+baseurl: ""
+url: "http://openchattanooga.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlights: false
+exclude:
+    -   bower_components
+    -   node_modules
+    -   sass
+
+dev: true
