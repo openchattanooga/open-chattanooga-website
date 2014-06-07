@@ -1,0 +1,19 @@
+#hd {
+    @extend %transparentBackground;
+    margin-bottom: 0;
+}
+
+#brand {
+    @include hide-text;
+    padding: 15px 0;
+    width: 143px;
+    height: 70px;
+    background: url('../img/mark.png') no-repeat center center;
+    .boxsizing & {
+        height: 100px;
+    }
+    @include hidpi {
+        background-image: url('../img/mark@2x.png');
+        background-size: 143px 70px;
+    }
+}

@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 
   {% include head.html %}
 
     <body>
+        <div class="container" id="wrapper">
+        {% include header.html %}
 
-    {% include header.html %}
+        <main id="main">
+          {{ content }}
+        </main>
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
+        {% include footer.html %}
+        </div><!-- /#wrapper -->
+        <script src="//platform.twitter.com/widgets.js" async></script>
     </body>
 </html>

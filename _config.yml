@@ -12,3 +12,4 @@ highlights: false
 exclude:
     -   bower_components
     -   node_modules
+    -   sass

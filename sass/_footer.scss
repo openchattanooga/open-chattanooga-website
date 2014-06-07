@@ -1,0 +1,35 @@
+#ft {
+    text-align: center;
+    @extend %transparentBackground;
+    nav {
+        text-align: center;
+        padding: 20px 0;
+        border: 0;
+        a {
+            display: inline-block;
+            padding: 0.4em 1em;
+            text-decoration: none;
+            margin: 0 0.5em 0.5em;
+        }
+    }
+}
+
+#social-nav {
+    a {
+        border-radius: 6px;
+        background: #000;
+        color: #fff;
+        &.github {
+            background: #333;
+        }
+        &.twitter {
+            background: #55acee;
+        }
+        &.facebook {
+            background: #3b5998;
+        }
+    }
+    .fa {
+        margin-right: 0.5em;
+    }
+}
