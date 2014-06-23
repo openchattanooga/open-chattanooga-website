@@ -2,8 +2,8 @@
 title: Open Chattanooga
 email: info@openchattanooga.com
 description: ""
-baseurl: "/openchattanooga.com"
-url: "http://openchattanooga.com"
+baseurl: "/openchattanooga.github.io"
+url: "http://openchattanooga.github.io"
 
 # Build settings
 markdown: kramdown
