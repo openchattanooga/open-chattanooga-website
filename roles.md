@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 #BRIGADE LEADERS
 The Open Chattanooga is lead by Brigade Captains.
 
