@@ -23,12 +23,13 @@ Core Team Members are important to a Brigade to diversify and distribute respons
 
 ##Delivery Lead (open position)
 The Delivery Lead is the point for projects in the Brigade. The Delivery Lead should have a working knowledge of all the projects being hacked on at a given time in the Brigade, understand the needs of those projects, and help members find projects and projects find members. The Delivery Lead’s areas of focus include:  
-* Active knowledge of all projects being worked on in local Brigade
-* Understands needs of those projects
-* Connects new members to projects
-* Works with project teams and project leads on project planning and accessing resources
-* Understands the priorities and needs of the city
-* Funnels relevant CfA Fellowship and Brigades apps to Brigade members for redeployment opportunities
+
+- Active knowledge of all projects being worked on in local Brigade
+- Understands needs of those projects
+- Connects new members to projects
+- Works with project teams and project leads on project planning and accessing resources
+- Understands the priorities and needs of the city
+- Funnels relevant CfA Fellowship and Brigades apps to Brigade members for redeployment opportunities
 
 ##Community Organizer (open position)
 The Community Organizer is responsible for recruiting and welcoming new members to the Brigade and helping them get oriented. They are the point of contact for members who have questions about how to get started, what to do next, or how to help locally. 
@@ -36,22 +37,23 @@ The Community Organizer is responsible for recruiting and welcoming new members 
 This Community Organizer should know about upcoming member events, be available to attend hack nights to assist with member questions, and create a welcoming environment. This position doesn’t necessarily require technical knowledge. 
 
 The Community Organizer’s focuses on building and maintaining community. This includes:  
-* Recruiting new member 
-* Onboarding new members
-* Empowering new members to use skills in Brigade structure
-* Managing Meetings/hack nights
-* Helping members move up the ladder of engagement
-* Keeping track of membership
+- Recruiting new member 
+- Onboarding new members
+- Empowering new members to use skills in Brigade structure
+- Managing Meetings/hack nights
+- Helping members move up the ladder of engagement
+- Keeping track of membership
 
 ##Storyteller (open position)
 The Storyteller owns the communication streams for their local Brigade. They will focus on telling the stories of the Brigade’s impact in their community. This includes writing blog posts, coordinating with local press, connecting with local media, and working with the CfA Communications team to share stories nationally. 
 
 The Storyteller’s areas of focus include:  
-* Ownership of content, marketing, and social media
-* Social media including Twitter, and Facebook
-* Website
-* Other content (video, photos, etc.)
-* Local press
+
+- Ownership of content, marketing, and social media
+- Social media including Twitter, and Facebook
+- Website
+- Other content (video, photos, etc.)
+- Local press
 
 ##Community Data Wrangler / Data Evangelists
 A community data wrangler is a talented data librarian. They work with the community and local officials to ensure the wider availability of data. In some cases this includes the implementation of a community built data portal.
