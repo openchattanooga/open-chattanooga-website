@@ -55,30 +55,13 @@ $navbar-height: 100px;
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
-.mobile-background {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 125%; 
-    background: url('../img/bg.jpg') no-repeat; 
-    background-size: 100% 100%;
-}
-
-@media (min-width: 600px) {
-    html {
-        overflow-y: scroll;
-        background: #fff url('../img/bg.jpg') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .mobile-background {
-        display: none;
-    }
+html {
+    overflow-y: scroll;
+    background: #fff url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
