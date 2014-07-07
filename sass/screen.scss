@@ -4,6 +4,9 @@ $font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial,
 $font-size-base: 16px;
 $navbar-height: 100px;
 
+// Colors
+$sky: #0d7fe2;
+
 // Core variables and mixins
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
@@ -57,8 +60,8 @@ $navbar-height: 100px;
 
 html {
     overflow-y: scroll;
-    background: #fff url('../img/bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
+    background: $sky url('../img/bg.jpg') no-repeat center center fixed;
+    webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
