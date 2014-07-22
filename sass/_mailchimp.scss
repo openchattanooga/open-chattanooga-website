@@ -1,2 +1,63 @@
 #mc_embed_signup {
+  max-width: 100%;
+
+  @media (min-width: 992px) {
+    max-width: 25em;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  .mc-field-group {
+    width: 100%;
+
+    input {
+      border: 1px solid $gray-light;
+    }
+
+  }
+
+  label, button {
+    font-weight: normal;
+    color: $headings-color;
+  }
+
+  div.mce_inline_error {
+    font-family: $headings-font-family !important;
+    font-weight: normal !important;
+    background-color: $brand-danger !important;
+  }
+
+  input.mce_inline_error {
+    border-color: $brand-danger !important;
+  }
+
+  .button {
+    background-color: $brand-primary;
+    font-size: $font-size-base;
+    font-weight: normal;
+
+    &:hover {
+      background-color: darken($brand-primary, 6)
+    }
+
+  }
+
+  .indicates-required {
+    width: inherit;
+    float: right;
+    margin-right: 0;
+    font-size: 14px;
+
+    .asterisk {
+      font-size: 14px;
+    }
+
+  }
+
+  .asterisk {
+    color: $brand-danger;
+  }
+
 }
