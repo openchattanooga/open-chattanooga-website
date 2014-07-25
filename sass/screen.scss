@@ -5,7 +5,7 @@ $font-size-base: 16px;
 $navbar-height: 100px;
 
 // Colors
-$sky: #0d7fe2;
+$sky: #91C2ED;
 
 // Core variables and mixins
 @import "bootstrap/variables";
@@ -99,4 +99,5 @@ body {
 
 @import "header";
 @import "main";
+@import "mailchimp";
 @import "footer";
