@@ -2,13 +2,17 @@
 title: Open Chattanooga
 email: info@openchattanooga.com
 description: ""
-baseurl: "/openchattanooga.github.io"
-url: "http://openchattanooga.github.io"
+baseurl: ""
+url: "/"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 highlights: false
+
+sass:
+    sass_dir: _scss
+
 exclude:
     -   bower_components
     -   node_modules
