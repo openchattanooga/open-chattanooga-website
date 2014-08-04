@@ -1,9 +1,8 @@
 # Site settings
 title: Open Chattanooga
 email: info@openchattanooga.com
-description: ""
-baseurl: ""
-url: "/"
+description: "Advocating for open local public data and supporting the geeks and civic hackers who make it useful!"
+url: "http://openchattanooga.com"
 
 # Build settings
 markdown: kramdown
@@ -12,8 +11,4 @@ highlights: false
 
 sass:
     sass_dir: _scss
-
-exclude:
-    -   bower_components
-    -   node_modules
-    -   sass
+    style: :compressed
