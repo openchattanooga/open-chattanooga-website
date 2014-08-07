@@ -1,0 +1,6 @@
+[submodule "_scss/vendor/bootstrap-sass"]
+	path = _scss/vendor/bootstrap-sass
+	url = https://github.com/twbs/bootstrap-sass.git
+[submodule "_scss/vendor/bourbon"]
+	path = _scss/vendor/bourbon
+	url = https://github.com/thoughtbot/bourbon.git

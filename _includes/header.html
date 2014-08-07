@@ -5,7 +5,7 @@
     <nav id="primary-nav" class="navbar-right">
         <ul class="nav navbar-nav">
         {% for page in site.pages %}
-            <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{% if page.nav_title %}{{ page.nav_title }}{% else %}{{ page.title }}{% endif %}</a></li>
+            <li><a class="page-link" href="{{ page.url}}" title="{{ page.title }}">{% if page.nav_title %}{{ page.nav_title }}{% else %}{{ page.title }}{% endif %}</a></li>
         {% endfor %}
         </ul>
     </nav>
