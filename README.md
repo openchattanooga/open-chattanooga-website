@@ -10,7 +10,7 @@ The project utilizes GitHub page's Jekyll support. If you see something that nee
 
 ### On Your Local Machine
 
-If your change is more complicated than incorrect spelling or grammar, you will want to fork the project, clone your fork, and perform edits on your local machine.
+If your change is more complicated, you will want to fork the project, clone your fork, and perform edits on your local machine.
 
 #### Requirements
 
