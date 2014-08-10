@@ -4,9 +4,19 @@
 
     <nav id="primary-nav" class="navbar-right">
         <ul class="nav navbar-nav">
-        {% for page in site.pages %}
-            <li><a class="page-link" href="{{ page.url}}" title="{{ page.title }}">{% if page.nav_title %}{{ page.nav_title }}{% else %}{{ page.title }}{% endif %}</a></li>
-        {% endfor %}
+          {% for weight in (1..10) %}
+            {% for page in site.pages %}
+              {% if page.weight == weight and page.title != null %}
+                <li><a class="page-link" href="{{page.url}}" title="{{page.title}}">{% if page.nav_title %}{{ page.nav_title }}{% else %}{{ page.title }}{% endif %}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+
+          {% for page in site.pages %}
+            {% if page.weight == null and page.title != null %}
+              <li><a class="page-link" href="{{page.url}}" title="{{page.title}}">{% if page.nav_title %}{{ page.nav_title }}{% else %}{{ page.title }}{% endif %}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
     </nav>
 
