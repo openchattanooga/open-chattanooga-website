@@ -17,3 +17,10 @@
         background-size: 143px 70px;
     }
 }
+
+#primary-nav {
+    @media (max-width: $grid-float-breakpoint-max) {
+      padding-top: 5em;
+      text-align: center;
+    }
+}
