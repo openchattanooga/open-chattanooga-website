@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Roles
+weight: 2
 ---
 
 #BRIGADE LEADERS

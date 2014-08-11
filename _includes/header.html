@@ -4,9 +4,24 @@
 
     <nav id="primary-nav" class="navbar-right">
         <ul class="nav navbar-nav">
-        {% for page in site.pages %}
-            <li><a class="page-link" href="{{ page.url}}" title="{{ page.title }}">{% if page.nav_title %}{{ page.nav_title }}{% else %}{{ page.title }}{% endif %}</a></li>
-        {% endfor %}
+
+          {% comment %} Display pages with weights in order. If no title, don't display {% endcomment %}
+
+          {% for weight in (1..10) %}
+            {% for p in site.pages %}
+              {% if p.weight == weight and p.title != null %}
+                <li {% if page.url == p.url %} class="active" {% endif %}><a class="page-link" href="{{p.url}}" title="{{p.title}}">{% if p.nav_title %}{{ p.nav_title }}{% else %}{{ p.title }}{% endif %}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+
+          {% comment %} Display pages with no weight. If no title, don't display {% endcomment %}
+
+          {% for p in site.pages %}
+            {% if p.weight == null and p.title != null %}
+              <li {% if page.url == p.url %} class="active" {% endif %}><a class="page-link" href="{{p.url}}" title="{{p.title}}">{% if p.nav_title %}{{ p.nav_title }}{% else %}{{ p.title }}{% endif %}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
     </nav>
 
