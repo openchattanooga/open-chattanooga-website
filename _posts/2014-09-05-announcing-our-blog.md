@@ -8,7 +8,7 @@ author: Sean Brewer
 
 Finally, Open Chattanooga has a blog! Hopefully this will be a good venue for us to keep everyone up to date on what we're doing!
 
-We have a lunch meeting next Wednesday September 10th! Preston Reid from Code for America will be our special guest. We will be having the lunch at the Waterhouse Pavilion at 12pm and discussing our on-going projects. You can go to the [meetup page for the event](http://www.meetup.com/cfabrigade/Chattanooga-TN/1204642/) for information and RSVP as well!
+We have a lunch meeting next Wednesday September 10th! Preston Rhea from Code for America will be our special guest. We will be having the lunch at the Waterhouse Pavilion at 12pm and discussing our on-going projects. You can go to the [meetup page for the event](http://www.meetup.com/cfabrigade/Chattanooga-TN/1204642/) for information and RSVP as well!
 
 Here are our on-going projects. We need your help! If you have any interest in them, you should come to the meeting and we can help pipe you in to a project.
 
