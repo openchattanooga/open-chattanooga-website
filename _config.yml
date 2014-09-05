@@ -22,3 +22,6 @@ og_image_width: 300
 og_image_height: 300
 fb_profile_id: OpenChattanooga
 fb_admins: 57701055
+
+gems:
+  - jekyll-sitemap
