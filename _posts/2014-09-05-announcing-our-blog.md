@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: /blog/2014/09/05/announcing-our-blog
 title:  "Announcing Our Blog!"
 date:   2014-09-05 00:37:00
 author: Sean Brewer
