@@ -1,8 +1,25 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{site.title}} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% else %}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="en_US">
+    {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
+    <meta property="og:url" content="{{ canonical }}">
+    {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
+    <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:300 }}">
+    <meta property="og:image" content="{% if site.url contains 'https://' %}{{ site.url | replace:'https://','http://' }}{% else %}{{ site.url }}{% endif %}/{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+    {% if site.url contains 'https://' %}<meta property="og:image:secure_url" content="{{ site.url }}/{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">{% endif %}
+    <meta property="og:image:type" content="{% if page.og_image %}{{ page.og_image_type }}{% else %}{{ site.og_image_type }}{% endif %}">
+    <meta property="og:image:width" content="{% if page.og_image %}{{ page.og_image_width }}{% else %}{{ site.og_image_width }}{% endif %}">
+    <meta property="og:image:height" content="{% if page.og_image %}{{ page.og_image_height }}{% else %}{{ site.og_image_height }}{% endif %}">
+    {% if site.fb_profile_id != empty %}<meta property="fb:profile_id" content="{{ site.fb_profile_id }}">{% endif %}
+    {% if site.fb_admins != empty %}<meta property="fb:admins" content="{{ site.fb_admins }}">{% endif %}
+
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 

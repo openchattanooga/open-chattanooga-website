@@ -6,9 +6,19 @@ url: "http://openchattanooga.com"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title
 highlights: false
+paginate: 5
+paginate_path: "blog/page:num"
 
 sass:
     sass_dir: _scss
     style: :compressed
+
+# Open Graph
+og_image: img/mark # Default image for Open Graph tag
+og_image_type: image/png
+og_image_width: 300
+og_image_height: 300
+fb_profile_id: OpenChattanooga
+fb_admins: 57701055
