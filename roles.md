@@ -14,7 +14,7 @@ The Brigade Captain is a volunteer who has demonstrated commitment as a Brigade 
 Sean Brewer
 
 **Past Brigade Captain:**   
-Daniel Ryan
+Daniel Ryan  
 Tim Moreland
 
 #MUNICIPAL PARTNERS
