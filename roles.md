@@ -11,7 +11,11 @@ Brigade Captain or Co-Captains
 The Brigade Captain is a volunteer who has demonstrated commitment as a Brigade leader. Brigade Captains are recognized by Code for America after achieving a number of organizing milestones. Brigade Captains make a one year commitment to lead a developed Brigade, and receive support including an operating budget, a trip to San Francisco for training and attendance at Code for America’s annual Summit.
 
 **Current Brigade Captain:** Seeking co-captain  
+Sean Brewer
+
+**Past Brigade Captain:**   
 Daniel Ryan
+Tim Moreland
 
 #MUNICIPAL PARTNERS
 Municipal Partners are a local Brigade’s civic innovation champions within government. Municipal Partners collaborate with and participate in their local Brigade. They make introductions between the Brigade and city workers, help Brigades navigate city processes, collaborate on events, and develop a civic innovation practice that spans the government and local community. Municipal Partners can participate in the Code for America Peer Network.
