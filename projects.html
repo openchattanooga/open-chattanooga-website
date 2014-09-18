@@ -1,0 +1,42 @@
+---
+layout: default
+title: Projects
+weight: 2
+---
+
+<h1>Projects</h1>
+
+<p>These are projects associated with Open Chattanooga. Do you have a project idea? <a href="https://github.com/openchattanooga/project-ideas/issues">Submit it!</a></p>
+
+<p>Projects are never finished! If you see a project that says <span class="label label-success">In use</span>, it just means that it's usable right now. Feel free to checkout a project's source and submit an issue or pull request.</p>
+
+{% assign projects = site.data.projects | sort: 'status' | reverse %}
+{% for project in projects %}
+<strong>{{ project.name }}</strong>
+
+
+<p>{{ project.description }}</p>
+<ul class="list-inline">
+    {% if project.repository != nil %}
+    <li>
+        <i class="fa fa-github"></i>
+        <a href="{{ project.repository }}">GitHub</a>
+    </li>
+    {% endif %}
+    {% if project.site != nil %}
+    <li>
+        <i class="fa fa-globe"></i>
+        <a href="{{ project.site }}">Website</a>
+    </li>
+    {% endif %}
+    {% if project.status != nil %}
+    <li>
+      {% if project.status == "In use" %}
+          <span class="label label-success">In use</span>
+      {% elsif project.status == "In progress" %}
+          <span class="label label-warning">In progress</span>
+      {% endif %}
+    </li>
+    {% endif %}
+</ul>
+{% endfor %}

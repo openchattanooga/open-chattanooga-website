@@ -1,0 +1,59 @@
+- name: Chattanooga Bike Parking Locator
+  description: Find the closest bike parking to your current location in Chattanooga!
+  site: http://openchattanooga.com/chattanooga-bike-parking-locator/
+  repository: https://github.com/openchattanooga/chattanooga-bike-parking-locator
+  status: In use
+
+- name: Chatt Crimes
+  description: A web app that visualizes local Chattanooga crime data on a map.
+  site: http://chattcrimes.com/
+  repository: https://github.com/kylegordy/Chatt-Crimes
+  status: In use
+
+
+- name: Chadocs
+  description: Easily search through various documents produced by Chattanooga and Hamilton County.
+  site: http://chadocs.herokuapp.com/
+  repository: https://github.com/openchattanooga/chadocs
+  status: In progress
+
+- name: Enterprise South Nature Park Webmap
+  description: An interactive webmap for the enterprise south nature park.
+  repository: https://github.com/openchattanooga/enterprise-south-nature-park-webmap
+  status: In progress
+
+
+- name: nuga
+  description: Have a dataset with no delimiters? Does it have defined column widths, though? Turn it into a usable CSV!
+  repository: https://github.com/chattanoogapubliclibrary/nuga
+  status: In use
+
+
+- name: sync-data-json
+  description: A utility to mirror datasets from other data portals as external datasets in your Socrata Open Data Portal. Uses external data portal's data.json dataset catalog for aggregation.
+  repository: https://github.com/chattanoogapubliclibrary/sync-data-json
+  status: In progress
+
+
+- name: Voxel Chattanooga
+  description: Chattanooga as a Minecraft world. Generated using data from the USGS and TopoMC in four hours on a Amazon GPU instance with 16 vCPUs and 22GB of RAM.
+  repository: https://github.com/ChattanoogaPublicLibrary/voxel-chattanooga
+  status: In use
+
+
+- name: chawiki
+  description: A website about Chattanooga that anyone can edit.
+  site: https://localwiki.org/cha/
+  status: In use
+
+
+- name: combine-data-json-aodp
+  description: Combines the paginated data.json into one for your ArcGIS Open Data Portal.
+  site: http://combine-data-json-aodp.herokuapp.com/
+  repository: https://github.com/ChattanoogaPublicLibrary/combine-data-json-aodp
+  status: In use
+
+- name: Chattanooga Open Data Policy
+  description: City of Chattanooga's Open Data Policy by Executive Order
+  repository: https://github.com/cityofchattanooga/Chattanooga-Open-Data-Policy
+  status: In use
