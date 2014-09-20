@@ -16,10 +16,10 @@ sass:
     style: :compressed
 
 # Open Graph
-og_image: img/mark.png # Default image for Open Graph tag
+og_image: img/mark-fb.png # Default image for Open Graph tag
 og_image_type: image/png
-og_image_width: 300
-og_image_height: 300
+og_image_width: 250
+og_image_height: 250
 fb_profile_id: OpenChattanooga
 fb_admins: 57701055
 
