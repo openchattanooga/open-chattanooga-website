@@ -68,7 +68,7 @@ No. You are free to work remotely as long as you are in Chattanooga or close by.
 
 ### How did the 3-month grant come about?
 
-We have had these funds through a Knight Foundation grant since the beginning of the year. Because ramping up our community organizing effort appears to be crucial, we decided to take advantage of the funding we have left available. You can read more about our grant here: https://trello.com/c/7TQmKEw3/32-knight-application
+We have had these funds through a Knight Foundation grant since the beginning of the year. Because ramping up our community organizing effort appears to be crucial, we decided to take advantage of the funding we have left available. You can [read more about our grant here](https://trello.com/c/7TQmKEw3/32-knight-application).
 
 ### Does the paid position conflict with the volunteer nature of the Brigade?
 
