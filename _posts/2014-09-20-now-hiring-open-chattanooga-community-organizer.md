@@ -72,7 +72,7 @@ We have had these funds through a Knight Foundation grant since the beginning of
 
 ### Does the paid position conflict with the volunteer nature of the Brigade?
 
-We don't think so. It's meant to temporarily augment our volunteer effort to make the Open Chattanooga brigade more effective.
+No. This position is meant to develop and build volunteer roles in the Brigade and delegate work to them. The goal is that by the time the paid position is over, responsibilities of the paid position will be absorbed by volunteer leaders and that you will have built the foundation of a strong and lasting volunteer Brigade.
 
 ### When will interviews for Community Organizer start and when will the position be filled?
 
