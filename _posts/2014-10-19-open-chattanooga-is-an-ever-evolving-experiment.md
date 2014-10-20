@@ -6,6 +6,8 @@ date:   2014-10-19 00:13:00
 author: Sean Brewer
 ---
 
+<img class="img-responsive" src="/img/blog/cutepetscha.jpg"/>
+
 Open Chattanooga is an ever evolving experiment. We're always trying new things to see what works well. Open Chattanooga recently released [CutePetsCHA](https://twitter.com/cutepetscha). CutePetsCHA is a modification of the popular [CutePets](https://github.com/codeforamerica/cutepets) Twitterbot. It began life as a Code for America project in Denver. CutePets is a simple project. Launching it doesn't take long, even if one person is doing everything to get it going.
 
 A problem we've had with hacknights is that we have many projects in the queue and not any folks leading them. Mostly, it's been me. On the hacknight where we launched CutePets, I decided to focus on CutePets and nothing else. Eight people showed up to work on it. I compiled the list of tasks required to get CutePets going. Those tasks were:
