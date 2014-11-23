@@ -9,6 +9,7 @@ $navbar-height: 100px;
 
 // Colors
 $sky: #91C2ED;
+$gray: #777;
 
 // Core variables and mixins
 @import "vendor/bootstrap-sass/vendor/assets/stylesheets/bootstrap/variables";
@@ -111,3 +112,4 @@ body {
 @import "main";
 @import "mailchimp";
 @import "footer";
+@import "blog";
