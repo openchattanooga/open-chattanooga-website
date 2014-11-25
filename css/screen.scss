@@ -4,11 +4,12 @@
 @import "vendor/bourbon/dist/bourbon";
 
 $font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size-base: 16px;
+$font-size-base: 18px;
 $navbar-height: 100px;
 
 // Colors
 $sky: #91C2ED;
+$gray: #777;
 
 // Core variables and mixins
 @import "vendor/bootstrap-sass/vendor/assets/stylesheets/bootstrap/variables";
@@ -72,6 +73,7 @@ html {
 
 body {
     background: transparent;
+    font-size: $font-size-base;
 }
 
 %transparentBackground {
@@ -85,18 +87,24 @@ body {
 #wrapper {
     border: 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-radius: 6px;
-    margin-top: 22px;
-    margin-bottom: 22px;
     > :first-child {
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
         border-bottom: 1px solid rgba(0,0,0,0.25);
     }
     > :last-child {
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
         border-top: 1px solid rgba(0,0,0,0.25);
+    }
+    @media (min-width: 768px) {
+        border-radius: 6px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        > :first-child {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        > :last-child {
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
     }
 }
 
@@ -104,3 +112,4 @@ body {
 @import "main";
 @import "mailchimp";
 @import "footer";
+@import "blog";

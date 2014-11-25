@@ -3,6 +3,7 @@ layout: post
 permalink: /blog/2014/10/19/open-chattanooga-is-an-ever-evolving-experiment
 title:  "Open Chattanooga Is An Ever Evolving Experiment"
 date:   2014-10-19 00:13:00
+excerpt: "Open Chattanooga is an ever evolving experiment. We're always trying new things to see what works well. Open Chattanooga recently released CutePetsCHA, a modification of the popular CutePets Twitterbot."
 author: Sean Brewer
 ---
 
