@@ -4,85 +4,96 @@ title: Roles
 weight: 3
 ---
 
-#BRIGADE LEADERS
-The Open Chattanooga is lead by Brigade Captains.
+# BRIGADE LEADERS
 
-Brigade Captain or Co-Captains
-The Brigade Captain is a volunteer who has demonstrated commitment as a Brigade leader. Brigade Captains are recognized by Code for America after achieving a number of organizing milestones. Brigade Captains make a one year commitment to lead a developed Brigade, and receive support including an operating budget, a trip to San Francisco for training and attendance at Code for America’s annual Summit.
+{{ site.data.roles.leaders.captains.description }}
 
-**Current Brigade Captain:** Seeking co-captain
-Sean Brewer
+**Current Brigade Captains:**
+{% for captain in site.data.roles.leaders.captains.personnel %}
+{% if captain.current == true %}* {{ captain.name }}{% endif %}{% endfor %}
 
-**Past Brigade Captain:**
-Daniel Ryan
-Tim Moreland
+**Past Brigade Captains:**
+{% for captain in site.data.roles.leaders.captains.personnel %}
+{% if captain.current != true %}* {{ captain.name }}{% endif %}{% endfor %}
 
-#MUNICIPAL PARTNERS
-Municipal Partners are a local Brigade’s civic innovation champions within government. Municipal Partners collaborate with and participate in their local Brigade. They make introductions between the Brigade and city workers, help Brigades navigate city processes, collaborate on events, and develop a civic innovation practice that spans the government and local community. Municipal Partners can participate in the Code for America Peer Network.
+# MUNICIPAL PARTNERS
+
+{{ site.data.roles.partners.municipal_partners.description }}
 
 **Current Municipal Partners:**
-Tim Moreland: Open Government Specialist in the Office of Mayor Andy Berke
-Jenny Park: Open Government Specialist in the Office of Mayor Andy Berke
+{% for municipal in site.data.roles.partners.municipal_partners.personnel %}
+{% if municipal.current == true %}* {{ municipal.name }}: {{ municipal.title }} {% endif %}{% endfor %}
 
-#CORE BRIGADE TEAM MEMBERS
-Core Team Members are important to a Brigade to diversify and distribute responsibilities in order to be more sustainable and more effective as a unit. Core Team Members work with the Leaders/Captains to lead specific areas of their local Brigade.
+# COMMUNITY PARTNERS
 
-##Delivery Lead (open position)
-The Delivery Lead is the point for projects in the Brigade. The Delivery Lead should have a working knowledge of all the projects being hacked on at a given time in the Brigade, understand the needs of those projects, and help members find projects and projects find members. The Delivery Lead’s areas of focus include:
+{{ site.data.roles.partners.community_partners.description }}
 
-- Active knowledge of all projects being worked on in local Brigade
-- Understands needs of those projects
-- Connects new members to projects
-- Works with project teams and project leads on project planning and accessing resources
-- Understands the priorities and needs of the city
-- Funnels relevant CfA Fellowship and Brigades apps to Brigade members for redeployment opportunities
+**Current Community Partners:**
+{% for community in site.data.roles.partners.community_partners.personnel %}
+{% if community.current == true %}* {{ community.name }}: {{ community.title }} {% endif %}{% endfor %}
 
-##Community Organizer (open position)
-The Community Organizer is responsible for recruiting and welcoming new members to the Brigade and helping them get oriented. They are the point of contact for members who have questions about how to get started, what to do next, or how to help locally.
+# CORE BRIGADE TEAM MEMBERS
 
-This Community Organizer should know about upcoming member events, be available to attend hack nights to assist with member questions, and create a welcoming environment. This position doesn’t necessarily require technical knowledge.
+{{ site.data.roles.core_members.description }}
 
-The Community Organizer’s focuses on building and maintaining community. This includes:
-- Recruiting new member
-- Onboarding new members
-- Empowering new members to use skills in Brigade structure
-- Managing Meetings/hack nights
-- Helping members move up the ladder of engagement
-- Keeping track of membership
+## Delivery Lead {% if site.data.roles.core_members.delivery_leads.seeking_personnel == true %}(open position){% endif %} 
 
-##Storyteller (open position)
-The Storyteller owns the communication streams for their local Brigade. They will focus on telling the stories of the Brigade’s impact in their community. This includes writing blog posts, coordinating with local press, connecting with local media, and working with the CfA Communications team to share stories nationally.
+{{ site.data.roles.core_members.delivery_leads.description }}
+
+{% for focuses in site.data.roles.core_members.delivery_leads.focus_areas %}* {{ focuses }}
+{% endfor %}
+
+
+## Community Organizer {% if site.data.roles.core_members.community_organizers.seeking_personnel == true %}(open position){% endif %}
+
+{{ site.data.roles.core_members.community_organizers.description }}
+
+The community organizer's areas of focus include:
+
+{% for focuses in site.data.roles.core_members.community_organizers.focus_areas %}* {{ focuses }}
+{% endfor %}
+
+**Current community organizers:**
+{% for member in site.data.roles.core_members.community_organizers.personnel %}
+{% if member.current == true %}* {{ member.name }}{% endif %}{% endfor %}
+
+## Storyteller {% if site.data.roles.core_members.storytellers.seeking_personnel == true %}(open position){% endif %}
+
+{{ site.data.roles.core_members.storytellers.description }}
 
 The Storyteller’s areas of focus include:
 
-- Ownership of content, marketing, and social media
-- Social media including Twitter, and Facebook
-- Website
-- Other content (video, photos, etc.)
-- Local press
+{% for focuses in site.data.roles.core_members.storytellers.focus_areas %}* {{ focuses }}
+{% endfor %}
 
-##Community Data Wrangler / Data Evangelists
-A community data wrangler is a talented data librarian. They work with the community and local officials to ensure the wider availability of data. In some cases this includes the implementation of a community built data portal.
+**Current storytellers:**
+{% for member in site.data.roles.core_members.storytellers.personnel %}
+{% if member.current == true %}* {{ member.name }}{% endif %}{% endfor %}
 
-This role requires some depth of technology experience and understanding of data sets. Ideally, this person has the bandwidth to answer emailed questions and attend Brigade meetings on a regular basis.
+## Community Data Wrangler / Data Evangelists {% if site.data.roles.core_members.data_evangelists.seeking_personnel == true %}(open position){% endif %}
 
-**Current Community Data Wrangler**
-Sean Brewer - Chattanooga Public Library Open Data Specialist
+{{ site.data.roles.core_members.data_evangelists.description }}
 
-##Scribe / Documentor (open position)
-A Scribe is someone who takes notes at Brigade events; helps keeps track of city council minutes and public hearings and reports back at hacknights; helps write training materials; keeps local wikis up to date; and/or writes software documentation.
+**Current data wranglers/evangelists**
+{% for member in site.data.roles.core_members.data_evangelists.personnel %}
+{% if member.current == true %}* {{ member.name }}{% endif %}{% endfor %}
 
-This role requires strength in written communication and time to email and call local media.
+## Scribe / Documentor {% if site.data.roles.core_members.scribes.seeking_personnel == true %}(open position){% endif %}
 
-##Developer Evangelists (open position)
-A developer evangelist acts as a mentor to other Brigade members and/or out of Brigade network individuals working on Brigade created products. Sometimes this person takes on a role as a repo manager. Developer evangelists are common throughout technical communities and play the same role within a Brigade. Their primary role makes new Brigade members feel welcomed and provide mentoring/coaching. As you can imagine, this role requires technical experience, time, and patience.
+{{ site.data.roles.core_members.scribes.description }}
 
-##Policy Evangelists (open position)
-A policy evangelist acts as a mentor to other Brigade members and helps educate the public and officials on open government, open data, and on the civic hacking practice. Within our communities, Law and Policy are “code” for physical space. Software is code for the digital space.
+## Developer Evangelists {% if site.data.roles.core_members.developer_evangelists.seeking_personnel == true %}(open position){% endif %}
 
-Policy evangelists are dedicated to understanding their municipal policy on Open Government, Open data, et. al. In some cases cases, this role is spread out to small working group to share notes on policy opportunities and have discussions with government agencies. This role requires patience, a really good networker, and a dash of political savviness.
+{{ site.data.roles.core_members.developer_evangelists.description }}
 
-##Event Organizer (open position)
-One of the most important roles is being an event organizer. Events enable the Brigade to exist. Several Brigades have found it helpful to have Brigade members rotate event logistics. It is not that you need someone to do everything in organizing an event, i.e. planning partnerships and programming. You need someone who can book space, arrange equipment, refreshments, set up, configure registration, etc...
+**Current developer evangelists:**
+{% for member in site.data.roles.core_members.developer_evangelists.personnel %}
+{% if member.current == true %}* {{ member.name }}{% endif %}{% endfor %}
 
-This role requires the skills reserved for a party planner.
+## Policy Evangelists {% if site.data.roles.core_members.policy_evangelists.seeking_personnel == true %}(open position){% endif %}
+
+{{ site.data.roles.core_members.policy_evangelists.description }}
+
+## Event Organizer {% if site.data.roles.core_members.event_organizers.seeking_personnel == true %}(open position){% endif %}
+
+{{ site.data.roles.core_members.event_organizers.description }}
